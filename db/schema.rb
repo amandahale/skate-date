@@ -15,12 +15,6 @@ ActiveRecord::Schema.define(version: 2019_02_19_214844) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "favorites", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "location_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "locations", force: :cascade do |t|
     t.string "name"
@@ -35,6 +29,13 @@ ActiveRecord::Schema.define(version: 2019_02_19_214844) do
     t.string "name"
     t.string "email"
     t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+    create_table "favorites", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "location_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
