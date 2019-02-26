@@ -1,7 +1,7 @@
 class Api::UsersController < ApplicationController
 
   def show
-    @user = User.find(params["id"])
+    @user = User.find(params[:id])
     render 'show.json.jbuilder'
   end
 
@@ -14,7 +14,7 @@ class Api::UsersController < ApplicationController
       )
     
     if user.save # happy path
-      render json: {message: 'User Create Success'}, status: :created
+      render 'show.json.jbuilder'
     else # sad path
       render json: {errors: user.errors.full_messages}, status: :bad_request
     end

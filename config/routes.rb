@@ -8,6 +8,10 @@ Rails.application.routes.draw do
 
     get '/locations' => "locations#index"
     post '/locations' => "locations#create"
+    get '/locations/:id' => "locations#show"
+    patch '/locations/:id' => "locations#update"
+    delete '/locations/:id' => "locations#destroy"
+
 
   #USERS
 
@@ -15,6 +19,16 @@ Rails.application.routes.draw do
     post '/users' => "users#create"
     patch '/users/:id' => "users#update"
     delete '/users/:id' => "users#destroy"
+
+  #SESSIONS
+    post "/sessions" => "sessions#create"
+
+  #FAVORITES
+
+    post '/favorites' => "favorites#create" 
+    delete '/favorites/:id' => "favorites#destroy"
+
+
 
   end
 end
