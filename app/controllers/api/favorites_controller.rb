@@ -1,6 +1,6 @@
 class Api::FavoritesController < ApplicationController
 
-before_action :authenticate_user
+  before_action :authenticate_user
 
   def create
     @favorite = Favorite.new(

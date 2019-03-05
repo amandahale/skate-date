@@ -24,6 +24,7 @@ class Api::LocationsController < ApplicationController
 
   def show
     @location = Location.find(params[:id])
+    @favorite = Favorite.find_by(user_id: current_user.id, location_id: params[:id])
     render 'show.json.jbuilder'
   end
 
