@@ -11,17 +11,17 @@ class Api::UsersController < ApplicationController
   end
 
   def create
-    user = User.new(
+    @user = User.new(
       name: params[:name],
       email: params[:email],
       password: params[:password],
       password_confirmation: params[:password_confirmation]
       )
     
-    if user.save # happy path
+    if @user.save # happy path
       render 'show.json.jbuilder'
     else # sad path
-      render json: {errors: user.errors.full_messages}, status: :bad_request
+      render json: {errors: @user.errors.full_messages}, status: :bad_request
     end
   end
 

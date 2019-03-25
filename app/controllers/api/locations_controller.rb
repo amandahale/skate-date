@@ -13,6 +13,7 @@ class Api::LocationsController < ApplicationController
       address: params[:address],
       image_url: params[:image_url],
       weblink: params[:weblink]
+      description: params[:description]
       )
 
     if @location.save # happy path
@@ -34,6 +35,7 @@ class Api::LocationsController < ApplicationController
       @location.address = params[:address] || @location.address
       @location.image_url = params[:image_url] || @location.image_url
       @location.weblink = params[:weblink] || @location.weblink
+      @location.description = params[:description] || @location.description
       
 
       if @location.save # happy path
