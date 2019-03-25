@@ -12,7 +12,7 @@ class Api::LocationsController < ApplicationController
       name: params[:name],
       address: params[:address],
       image_url: params[:image_url],
-      weblink: params[:weblink]
+      weblink: params[:weblink],
       description: params[:description]
       )
 
