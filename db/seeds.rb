@@ -1,7 +1,14 @@
-Favorite.create!([
-  {user_id: 1, location_id: 1},
-  {user_id: 1, location_id: 7},
-  {user_id: 1, location_id: 2}
+User.create!([
+  {name: "Shred Beans & Rice", email: "shred@gmail.com", password_digest: "$2a$10$rZdzpFl1pSlOKjITuiRR8upwDa/da9bxKYzjnY.YDew9BWw4SEL7K"},
+  {name: "Luna Tic", email: "luna@gmail.com", password_digest: "$2a$10$3XEDRwsqhjr712KXSqy6LuKz9hUgBaBJLiu/7YkXLckIIyJmFDoH."},
+  {name: "Smackery Binx", email: "Binx@gmail.com", password_digest: "$2a$10$nBWRW08SLDAzFd7cFIGLwOLlgHCOBb6u5u.W3pRU/ZTuGgqyq5QUi"},
+  {name: "Smackery Binx", email: "binx@gmail.com", password_digest: "$2a$10$STzUfDB4N/uQkA95HlPfyOVepgYK5N.yKBg5eEDO1Ham0CS6GE656"},
+  {name: "Kid Vicious", email: "vicious@gmail.com", password_digest: "$2a$10$kNVA9/nOzxvCczLJ0bQDnurJlXoh4xCqd0tgb6dzw/deQa7M8Pj26"},
+  {name: "Amanda Hale", email: "amanda@gmail.com", password_digest: "$2a$10$vsQooanmdohbfG0xG1RNE.4X7rsWIwMOt6X9MpxSlx0vejjz/9mD."},
+  {name: "Hawkeye Fierce", email: "hawkeye@gmail.com", password_digest: "$2a$10$7uJ/ehPMNVWbmt8BvACxV.H/3c6qeE5.PGDN/IRazye2yjL.7Oq2y"},
+  {name: "joe", email: "joe@gmail.com", password_digest: "$2a$10$5ZUpFZfv1SzZI7Uo9bTg1usf0jpj6AfGZNcugi1TebIgnAAU8uUWq"},
+  {name: "rachel", email: "rachel@gmail.com", password_digest: "$2a$10$dooO7Qol47ieVXyqVyeN8ud2M4aU9Mk/WjaLYPa8L59bOJ.8GlMM2"},
+  {name: "user", email: "user@gmail.com", password_digest: "$2a$10$15WC9YxC/r9lJ/kidsOfKuBWSrnLkuR3HMiYjQ3k2fsyzTjvI.PE2"}
 ])
 Location.create!([
   {name: "Wilson Skate Park", address: "W Wilson Ave, Chicago, IL 60640", image_url: "https://w82.com/wp/wp-content/uploads/2014/06/xWILSON.jpg.pagespeed.ic.BYibNAmeS4.jpg", weblink: "https://www.chicagoparkdistrict.com/parks-facilities/wilson-skate-park", description: "Outdoor skate park for all wheels"},
@@ -15,15 +22,8 @@ Location.create!([
   {name: "The 606", address: "Chicago, IL 60647", image_url: "https://farm9.staticflickr.com/8883/18533188342_f21794db6f_b.jpg", weblink: "https://www.the606.org/", description: "Free, outdoor paved trail welcoming all wheels"},
   {name: "La Bodega", address: "1934 N Campbell Ave Chicago, IL 60647", image_url: "https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/52942901_10106221767829499_7736965000526299136_n.jpg?_nc_cat=101&_nc_ht=scontent-ort2-1.xx&oh=5864a735ddbe25c0e8ef8e45f12a3cb2&oe=5D1FC2CF", weblink: "https://www.facebook.com/groups/ChicagoShred/", description: "Indoor ramps available for classes and open skates for a small fee"}
 ])
-User.create!([
-  {name: "Shred Beans & Rice", email: "shred@gmail.com", password_digest: "$2a$10$rZdzpFl1pSlOKjITuiRR8upwDa/da9bxKYzjnY.YDew9BWw4SEL7K"},
-  {name: "Luna Tic", email: "luna@gmail.com", password_digest: "$2a$10$3XEDRwsqhjr712KXSqy6LuKz9hUgBaBJLiu/7YkXLckIIyJmFDoH."},
-  {name: "Smackery Binx", email: "Binx@gmail.com", password_digest: "$2a$10$nBWRW08SLDAzFd7cFIGLwOLlgHCOBb6u5u.W3pRU/ZTuGgqyq5QUi"},
-  {name: "Smackery Binx", email: "binx@gmail.com", password_digest: "$2a$10$STzUfDB4N/uQkA95HlPfyOVepgYK5N.yKBg5eEDO1Ham0CS6GE656"},
-  {name: "Kid Vicious", email: "vicious@gmail.com", password_digest: "$2a$10$kNVA9/nOzxvCczLJ0bQDnurJlXoh4xCqd0tgb6dzw/deQa7M8Pj26"},
-  {name: "Amanda Hale", email: "amanda@gmail.com", password_digest: "$2a$10$vsQooanmdohbfG0xG1RNE.4X7rsWIwMOt6X9MpxSlx0vejjz/9mD."},
-  {name: "Hawkeye Fierce", email: "hawkeye@gmail.com", password_digest: "$2a$10$7uJ/ehPMNVWbmt8BvACxV.H/3c6qeE5.PGDN/IRazye2yjL.7Oq2y"},
-  {name: "joe", email: "joe@gmail.com", password_digest: "$2a$10$5ZUpFZfv1SzZI7Uo9bTg1usf0jpj6AfGZNcugi1TebIgnAAU8uUWq"},
-  {name: "rachel", email: "rachel@gmail.com", password_digest: "$2a$10$dooO7Qol47ieVXyqVyeN8ud2M4aU9Mk/WjaLYPa8L59bOJ.8GlMM2"},
-  {name: "user", email: "user@gmail.com", password_digest: "$2a$10$15WC9YxC/r9lJ/kidsOfKuBWSrnLkuR3HMiYjQ3k2fsyzTjvI.PE2"}
+Favorite.create!([
+  {user_id: 1, location_id: 1},
+  {user_id: 1, location_id: 7},
+  {user_id: 1, location_id: 2}
 ])
