@@ -27,3 +27,4 @@ Favorite.create!([
   {user_id: 1, location_id: 7},
   {user_id: 1, location_id: 2}
 ])
+
